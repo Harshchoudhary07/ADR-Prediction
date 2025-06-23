@@ -34,3 +34,28 @@ An AI-based web application that predicts the **risk of Adverse Drug Reactions (
 | Deployment   | (Optional: Docker, Render, etc.) |
 
 ---
+
+
+
+---
+
+## ⚙️ Setup Instructions
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/Harshchoudhary07/ADR-Prediction.git
+cd ADR-Prediction
+
+# 2. Create a virtual environment
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run migrations
+python manage.py migrate
+
+# 5. Start the server
+python manage.py runserver
+
