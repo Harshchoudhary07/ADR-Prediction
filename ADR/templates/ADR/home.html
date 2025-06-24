@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Load static files -->
+    {% load static %}
+    
+    <!-- Css Stylesheet -->
+    <link rel="stylesheet" href="{% static 'ADR/style.css' %}">
+    <script defer src="#"></script>
+    <script defer src="{% static 'ADR/script.js' %}"></script>
+
+
+    <!-- unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <!-- script tag -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.10/lottie.min.js"></script>
+
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Swiper CSS -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>  
+    <title>ADR Prediction System</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/906/906334.png" type="image/png">
+</head>
+  <body>
+    
+    <!-- Showcase -->
+    <main class="main" id="home">
+      <!-- Background video -->
+
+    <video autoplay muted loop playsinline width="1200px" style="max-width: 8000px; height: auto; border-radius: 10px;">
+        <source src="{% static 'ADR/ADR.mp4' %}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+      <header class="header">
+        <!-- logo -->
+        <div class="logo">
+          <a href="#">ADR Prediction System</a>
+        </div>
+
+        <!-- navbar -->
+        <nav class="navbar">
+          <ul class="navlists">
+            <li class="navlist"><a href="#About">About</a></li>
+            <li class="navlist"><a href="#features">Features</a></li>
+            <li class="navlist"><a href="#why-choose-taskmate">Why Choose ADR?</a></li>
+            <li class="navlist"><a href="#comparison">comparison</a></li>
+            <li class="navlist"><a href="#">Login/Signup</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- showcase-content -->
+      <div class="showcase-content">
+        <h1>ADR - "Prescribe Smarter, Prevent Reactions"</h1>
+      </div>
+    </main>
+    
+    <!-- About -->
+    <section id="About">
+      <div class="about-container">
+        <div class="about-content">
+          <h2>About ADR Prediction System</h2>
+          <p>ADR Prediction System is an AI-powered tool designed to predict adverse drug reactions before they happen.</p>
+          <p>By analyzing a patient's medical history, current symptoms, and demographic data, it helps doctors make safer prescription choices—minimizing risks and improving treatment outcomes.</p>
+        </div>
+        <div class="about-img">
+          <img src="https://miro.medium.com/v2/resize:fit:2000/format:webp/0*-pk8GyN4QQcnfXUl" alt="About TaskMate">
+        </div>
+      </div>
+    </section>
+
+ <!-- Features Section -->
+<section id="features">
+  <div class="container">
+    <div class="title-container">
+      <h2 class="section-title">Powerful Features</h2>
+    </div>
+    <div class="features-grid">
+      <!-- Feature 1 -->
+      <div class="feature-card">
+        <img src="https://static.seekingalpha.com/cdn/s3/uploads/getty_images/2138731043/image_2138731043.jpg?io=getty-c-w750" alt="AI Prediction">
+        <h3>AI-Driven Predictions</h3>
+        <p>Leverages machine learning to assess ADR risk with high accuracy.</p>
+      </div>
+      
+      <!-- Feature 2 -->
+      <div class="feature-card">
+        <img src="https://integrio.net/static/0701f23982f3ff0ed9b82ce0c7164378/Impact-of-Generative-AI-on-Personalization-in-2024.png" alt="Personalized Analysis">
+        <h3>Personalized Analysis</h3>
+        <p>Considers patient's age, history, symptoms, and current medications.</p>
+      </div>
+      
+      <!-- Feature 3 -->
+      <div class="feature-card">
+        <img src="https://news.harvard.edu/wp-content/uploads/2025/03/Findings-AI-in-medicine-resize.png" alt="Drug check">
+        <h3>Real-Time Drug Check</h3>
+        <p>Instantly evaluates any drug for potential adverse reactions.</p>
+      </div>
+      
+      <!-- Feature 4 -->
+      <div class="feature-card">
+        <img src="https://png.pngtree.com/png-vector/20220127/ourmid/pngtree-global-data-security-personal-data-security-cyber-data-security-online-concept-png-image_4366910.png" alt="Data Privacy First">
+        <h3>Data Privacy First</h3>
+        <p>Patient information is encrypted and securely handled end-to-end.</p>
+      </div>
+    
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Why Choose TaskMate Section -->
+<section id="why-choose-taskmate">
+  <div class="title-container">
+    <h2 class="section-title">Why Choose ADR?</h2>
+  </div>
+    <div class="why-choose-content">
+      <div class="why-choose-text">
+        <p>ADR Prediction System isn't just another medical tool—it's a cutting-edge AI assistant that empowers healthcare professionals to make safer, smarter prescriptions. Designed with precision and usability in mind, it brings predictive insights to the point of care.</p>
+        <ul>
+          <li><strong>AI-Powered Risk Detection:</strong> Instantly flags potential adverse drug reactions before prescribing.</li>
+          <li><strong>Personalized Analysis:</strong> Evaluates each patient's symptoms, history, and medications for accurate predictions.</li>
+          <li><strong>Real-Time Insights:</strong> Get immediate feedback on drug safety during consultations.</li>
+          <li><strong>Visual Risk Reports:</strong> Understand risks with clear, color-coded charts and summaries.</li>
+          <li><strong>Data Security Focused:</strong> Built with privacy-first architecture to safeguard patient information.</li>
+        </ul>
+      </div>
+      <div class="why-choose-image">
+  <img src="https://cbirt.net/wp-content/uploads/2024/05/AI-discovered-Drugs.webp" alt="Why Choose TaskMate" style="width: 300px; height: auto;">
+</div>
+    </div>
+</section>
+
+
+
+    <!-- TaskMate vs. Competitors Section -->
+<section id="comparison">
+  <div class="container">
+    <div class="title-container">
+      <h2 class="section-title">ADR vs. Competitors</h2>
+    </div>
+    <div class="comparison-table-wrapper">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>ADR Prediction System</th>
+            <th>Traditional Tools</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>AI-Based ADR Risk Prediction</td>
+            <td><i class="uil uil-check-circle check"></i></td>
+            <td><i class="uil uil-times-circle cross"></i></td>
+          </tr>
+          <tr>
+            <td>Patient-Specific Drug Analysis</td>
+            <td><i class="uil uil-check-circle check"></i></td>
+            <td><i class="uil uil-minus-circle partial"></i></td>
+          </tr>
+          <tr>
+            <td>Real-Time Prescription Insights</td>
+            <td><i class="uil uil-check-circle check"></i></td>
+            <td><i class="uil uil-times-circle cross"></i></td>
+          </tr>
+          <tr>
+            <td>Visual Risk Reporting</td>
+            <td><i class="uil uil-check-circle check"></i></td>
+            <td><i class="uil uil-minus-circle partial"></i></td>
+          </tr>
+          <tr>
+            <td>Data Privacy & Security</td>
+            <td><i class="uil uil-check-circle check"></i></td>
+            <td><i class="uil uil-times-circle cross"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+    <br><br>
+  </body>
+</html>
