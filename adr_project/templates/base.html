@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ADR Predictor</title>
+</head>
+<body>
+  <nav>
+    {% if user.is_authenticated %}
+      <p>Hello, {{ user.username }} | <a href="{% url 'logout' %}">Logout</a></p>
+    {% else %}
+      <a href="{% url 'login' %}">Login</a> |
+      <a href="{% url 'register' %}">Register</a>
+    {% endif %}
+  </nav>
+  <hr>
+  {% if messages %}
+    {% for message in messages %}
+      <p>{{ message }}</p>
+    {% endfor %}
+  {% endif %}
+  {% block content %}{% endblock %}
+</body>
+</html>
